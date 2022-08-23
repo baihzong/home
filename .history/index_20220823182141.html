@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./css/media.css" media="all and (max-width:768px)">
+    <title>Document</title>
+
+    <style>
+      #TheFirstPage {
+        background: url(./image/背景1.png) no-repeat;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-position: center 0;
+        position: absolute;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+      }
+      #TheFirstPage .one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: start;
+      }
+      #TheFirstPage .one h1 {
+        font-size: 40px;
+        color: #ffffff;
+      }
+      #TheFirstPage .one p {
+        font-size: 20px;
+        color: #ffffff;
+      }
+      #TheFirstPage .one a {
+        font-size: 16px;
+        color: #ffffff;
+      }
+      #TheFirstPage .one > * {
+        margin-bottom: 40px;
+      }
+      #TheFirstPage .one .icon-github-fill {
+        font-size: 40px;
+        color: #ccc;
+        /* 右上角 */
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px 10px 0 0;
+      }
+
+      #TheFirstPage .two {
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(0, 0, 0, 0.15) 100%
+          ),
+          radial-gradient(
+              at top center,
+              rgba(255, 255, 255, 0.4) 0%,
+              rgba(0, 0, 0, 0.4) 120%
+            )
+            #989898;
+        background-blend-mode: multiply, multiply;
+        scroll-snap-align: start;
+        overflow-y: hidden;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #TheFirstPage .two img {
+        width: 100px;
+        height: 100px;
+        border: 3px solid rgb(77, 75, 75);
+        border-radius: 50%;
+        box-shadow: 0 0 1px 1px rgba(87, 87, 87, 0.3);
+        transition: 0.4s ease-in-out;
+        margin-bottom: 30px;
+      }
+      #TheFirstPage .two h1 {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 30px;
+      }
+      #TheFirstPage .two p {
+        font-size: 16px;
+        padding-bottom: 15px;
+        color: #ccc;
+        letter-spacing: 3px;
+        font-weight: lighter;
+
+        margin-bottom: 20px;
+      }
+      #TheFirstPage .two ul {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 130px;
+        border-top: 2px solid #505050;
+        border-bottom: 2px solid #505050;
+      }
+      #TheFirstPage .two li {
+        border-left: 2px solid #505050;
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; */
+      }
+      #TheFirstPage .two li:last-child {
+        border-right: 2px solid #505050;
+      }
+      #TheFirstPage .two li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #TheFirstPage .two li a i {
+        color: #ccc;
+      }
+      #TheFirstPage .two li a span {
+        color: #ccc;
+        font-size: 20px;
+        padding: 0 25px;
+        margin-top: 15px;
+      }
+      /* 手机自适应 */
+@media all and (max-width: 768px) {
+  #TheFirstPage .two img {
+    margin-bottom: 20px;
+  }
+
+  #TheFirstPage .two h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  #TheFirstPage .two p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  #TheFirstPage .two ul {
+    height: 100px;
+    border-top: 1px solid #505050;
+    border-bottom: 1px solid #505050;
+  }
+
+  #TheFirstPage .two li {
+    border-left: 1px solid #505050;
+  }
+
+  #TheFirstPage .two li:last-child {
+    border-right: 1px solid #505050;
+  }
+
+
+  #TheFirstPage .two li a span {
+    color: #ccc;
+    font-size: 14px;
+    padding: 0 15px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="TheFirstPage">
+        <div class="one">
+          <h1>The First Page</h1>
+          <p>This is the first page of the website.</p>
+          <a href="./page1.html">enter</a>
+          <a class="iconfont icon-github-fill" href="https://github.com/baihzong/myCard.git"></a>
+        </div>
+
+        <div class="two">
+          <img src="./image/头像.png" alt="" />
+          <h1>五月的侧颜</h1>
+          <p>Input & Think & Output</p>
+          <ul>
+            <li>
+              <a href="https://weibo.com/u/6493543925" aria-label="Blog"
+                ><i class="iconfont icon-joblog"></i
+                ><span data-translate="Blog">Blog</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="About"
+                ><i class="iconfont icon-zhifeiji"></i
+                ><span data-translate="About">About</span></a
+              >
+            </li>
+            <li>
+              <a href="./Functional components/Functional components.html" aria-label="Thinking"
+                ><i class="iconfont icon-tishi"></i
+                ><span data-translate="Thinking">Thinking</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Weibo"
+                ><i class="iconfont icon-xiaolian"></i
+                ><span data-translate="Weibo">Weibo</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Gallery" target="_blank"
+                ><i class="iconfont icon-zhaopian"></i
+                ><span data-translate="Gallery">Gallery</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
